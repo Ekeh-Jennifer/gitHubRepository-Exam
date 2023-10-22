@@ -11,12 +11,12 @@ function Overview() {
         <p>Ekeh-Jennifer / README.md </p>
         <p>Hello there; welcome </p>
         <div className="container__body">
-          {/* <p>
-          <img src={Twitter} alt="" /> @quinypher
-        </p>
-        <p>
-          <img src={Instagram} alt="" /> @quinypher
-        </p> */}
+          <div>
+            <img src={Twitter} alt="" /> <p>@quinypher</p>
+          </div>
+          <div>
+            <img src={Instagram} alt="" /> <p>@quinypher</p>
+          </div>
         </div>
         <p>About Me</p>
       </div>

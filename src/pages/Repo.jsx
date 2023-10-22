@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useErrorBoundary } from "react-error-boundary";
 import envelopeImg from "../assets/envelope-regular.svg";
 
 function Repo() {
+  const navigate = useNavigate();
   const params = useParams();
   const URL = `https://api.github.com/repos/Ekeh-Jennifer/${params.repoName}`;
   const [repo, setRepo] = useState({});
@@ -75,35 +76,8 @@ function Repo() {
           beatae dolorem quod dolor reiciendis unde. Eaque, consectetur nisi
           quibusdam atque quisquam deserunt. Quam! */}
         </p>
-        <p>
-          <a class="back--link" href="/">
-            Go back
-          </a>
-        </p>
-        <div className="repo__2">
-          <p className="repo__2a">
-            <span className="">{/* <AiOutlineStar /> */}</span>
-            <span className="repo__2b">
-              {parent ? parent.stargazers_count : stargazers_count}
-            </span>
-          </p>
-          <p className="repo__3">
-            <span className="">{/* <FiEye /> */}</span>
-            <span className="repo__3a">
-              {parent ? parent.watchers_count : watchers_count}
-            </span>
-          </p>
-          <p className="repo__4">
-            <span className="">
-              {/* <BiGitRepoForked /> */}
-              <img src={envelopeImg} alt="" />
-            </span>
-            <span className="repo__4a">
-              {parent ? parent.forks_count : forks_count}
-            </span>
-          </p>
-          <p>{languages}</p>
-        </div>
+
+        <button onClick={() => navigate("/repositories")}>Go back</button>
       </div>
     </div>
   );

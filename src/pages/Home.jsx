@@ -1,9 +1,7 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 // import overviewImg from "../assets/book-open-solid-svg";
 // import repoImg from "../assets/building-regular.svg";
-
-
 
 function Home() {
   return (
@@ -13,7 +11,7 @@ function Home() {
         <div>
           <img
             className="container__aside-img"
-            src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&q=80&w=1886&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://avatars.githubusercontent.com/u/143519877?v=4"
             alt=""
           />
         </div>
@@ -27,8 +25,20 @@ function Home() {
       </div>
       <div className="container__main">
         <div className="container__main1">
-          <Link to="/"> OVERVIEW</Link>
-          <Link to="/repositories"> REPOSITORIES </Link>
+          <NavLink
+            className={({ isActive }) => (isActive ? "activeLink" : "")}
+            to="/"
+          >
+            {" "}
+            OVERVIEW
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "activeLink" : "")}
+            to="/repositories"
+          >
+            {" "}
+            REPOSITORIES{" "}
+          </NavLink>
         </div>
 
         <div>

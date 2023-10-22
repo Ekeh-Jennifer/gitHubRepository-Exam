@@ -143,6 +143,14 @@ nav {
   gap: 80px;
   font-size: 25px;
 }
+
+.activeLink {
+  color: white;
+}
+
+.repo-card h2:hover {
+  color: white;
+}
 @media (width > 768px) {
   .container {
     flex-direction: row;

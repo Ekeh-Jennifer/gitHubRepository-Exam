@@ -1,5 +1,9 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+// import overviewImg from "../assets/book-open-solid-svg";
+// import repoImg from "../assets/building-regular.svg";
+
+
 
 function Home() {
   return (
@@ -16,23 +20,20 @@ function Home() {
         <div className="container__aside-text">
           <p> EKEH JENNIFER</p>
           <p>drjen</p>
-          <p>
-            A Frontend student of alt school 2022/2023 session. Working hard &
-            pushing limits of every opportunity. I look forward to improving my
-            skill at every turn{" "}
-          </p>
+          <button type="button" onclick=")">
+            Follow
+          </button>
         </div>
       </div>
       <div className="container__main">
-        <h1>MY GITHUB REPOSITORY</h1>
-        <div>
-          <Link to="/">OVERVIEW</Link>
+        <div className="container__main1">
+          <Link to="/"> OVERVIEW</Link>
           <Link to="/repositories"> REPOSITORIES </Link>
         </div>
+
         <div>
           <Outlet />
         </div>
-        
       </div>
     </div>
   );

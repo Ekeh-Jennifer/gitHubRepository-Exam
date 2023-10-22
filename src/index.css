@@ -3,7 +3,6 @@
   --White: hsl(0, 0%, 100%);
   --Light-Grey: hsl(217, 12%, 63%);
   --Medium-Grey: hsl(216, 12%, 54%);
-  --Dark-Blue: hsl(213, 19%, 18%);
   --Black: hsl(0, 0%, 0%);
 }
 
@@ -15,10 +14,41 @@
 
 html {
   font-size: 100%;
+  color: whitesmoke;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: black;
+  min-height: 100vh;
+}
+a {
+  color: rgb(105, 102, 102);
+  text-decoration: none;
+  font-size: 20px;
+}
+a:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+header {
+  background-color: hsl(56, 100%, 50%);
+  color: black;
+}
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+.header-text {
+  padding: 16px 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: -10px;
+}
+.header-ref {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 20px;
 }
 
 img {
@@ -42,20 +72,43 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(56, 100%, 50%);
 }
 
 .container__main {
-  padding: 20px 16px;
+  padding: 14px 10px;
+  border-bottom: 2px solid gray;
+}
+.container__main1 {
+  color: whitesmoke;
+  font-size: 25px;
+  font-style: oblique;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 10px; */
+  border-bottom: 2px solid gray;
 }
 .container__main h1 {
   text-align: center;
 }
 
+.container__intro {
+  padding: 25px 20px;
+  border-bottom: 2px solid gray;
+}
+.container__intro {
+  padding: 15px 10px;
+  line-height: 50px;
+  /* gap: 15px; */
+}
+.container__conclusion {
+  padding: 15px 20px;
+  line-height: 35px;
+}
+
 .container__aside-img {
   /* display: block; */
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   /* position: absolute;
   top: 0; */
   border-radius: 50%;
@@ -73,6 +126,23 @@ nav {
   border-radius: 10px;
 }
 
+.Repositories {
+  padding: 10px 10px;
+}
+.repo__1a {
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: hsl(56, 100%, 50%);
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  font-size: 25px;
+}
 @media (width > 768px) {
   .container {
     flex-direction: row;
@@ -85,9 +155,16 @@ nav {
     left: 0;
   }
   .container__main {
+    padding-block: 80px;
     width: 100%;
     margin-left: 30%;
     border: 1px solid gray;
     border-left: none;
+  }
+  /* .container__intro{
+border-bottom: 2px solid gray;
+  } */
+
+  .container__body {
   }
 }

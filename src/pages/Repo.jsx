@@ -59,37 +59,46 @@ function Repo() {
 
         {parent ? <p className=""> {parent.full_name} </p> : null}
       </div>
-      <div className="space-y-4 mt-8">
-        <p className="text-lg">Created on {convertDate(created_at)}</p>
+      <div className="Repositories">
+        <p className="repo__1">Created on {convertDate(created_at)}</p>
         <p>Updated on {convertDate(updated_at)}</p>
-        <p className="leading-[1.625rem] max-w-3xl">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+        <p className="repo__1a">
+          <p>Forks: 0</p>
+          <p>Stars: 0</p>
+          <p>Visibility: 0</p>
+
+          {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
           nobis accusamus omnis ex exercitationem perspiciatis repellat vitae
           animi incidunt culpa numquam, eius asperiores ipsa rerum. Ipsa veniam
           doloremque dolorum architecto? Amet odit illum ab in, doloremque
           ullam, tenetur illo eos quaerat dicta quis facere, natus aspernatur
           beatae dolorem quod dolor reiciendis unde. Eaque, consectetur nisi
-          quibusdam atque quisquam deserunt. Quam!
+          quibusdam atque quisquam deserunt. Quam! */}
         </p>
-        <div className="flex gap-2 items-center">
-          <p className="flex gap-x-2 items-center  text-3xl md:text-5xl">
+        <p>
+          <a class="back--link" href="/">
+            Go back
+          </a>
+        </p>
+        <div className="repo__2">
+          <p className="repo__2a">
             <span className="">{/* <AiOutlineStar /> */}</span>
-            <span className="text-xl md:text-2xl">
+            <span className="repo__2b">
               {parent ? parent.stargazers_count : stargazers_count}
             </span>
           </p>
-          <p className="flex gap-x-2 items-center  text-3xl md:text-5xl">
+          <p className="repo__3">
             <span className="">{/* <FiEye /> */}</span>
-            <span className="text-xl md:text-2xl">
+            <span className="repo__3a">
               {parent ? parent.watchers_count : watchers_count}
             </span>
           </p>
-          <p className="flex gap-x-2 items-center  text-3xl md:text-5xl">
+          <p className="repo__4">
             <span className="">
               {/* <BiGitRepoForked /> */}
               <img src={envelopeImg} alt="" />
             </span>
-            <span className="text-xl md:text-2xl">
+            <span className="repo__4a">
               {parent ? parent.forks_count : forks_count}
             </span>
           </p>

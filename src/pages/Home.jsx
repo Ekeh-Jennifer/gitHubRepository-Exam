@@ -1,7 +1,5 @@
 import React from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
-// import overviewImg from "../assets/book-open-solid-svg";
-// import repoImg from "../assets/building-regular.svg";
 
 function Home() {
   return (
@@ -17,10 +15,7 @@ function Home() {
         </div>
         <div className="container__aside-text">
           <p> EKEH JENNIFER</p>
-          <p>drjen</p>
-          <button type="button" onclick=")">
-            Follow
-          </button>
+          <p>@drjen</p>
         </div>
       </div>
       <div className="container__main">

@@ -23,9 +23,9 @@ body {
   min-height: 100vh;
 }
 a {
-  color: rgb(105, 102, 102);
+  color: rgb(149, 149, 149);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
 }
 a:hover {
   background-color: hsl(0, 0%, 100%);
@@ -38,20 +38,28 @@ header {
   width: 40px;
   height: 40px;
 }
-.header-text {
-  padding: 16px 20px;
+.header-text h1 {
   text-align: center;
-  font-size: 20px;
-  margin: -10px;
+  align-items: baseline;
+  justify-items: right;
+  padding-right: 25px;
+  font-size: 50px;
+  padding: 10px;
 }
 .header-ref {
+  padding-top: 30px;
+  font-weight: bolder;
+  font-style: normal;
+  font-stretch: extra-condensed;
   display: flex;
   text-decoration: none;
+  text-align: center;
   list-style: none;
   gap: 20px;
 }
 
 img {
+  padding-top: 26px;
   max-width: 100%;
   display: block;
 }
@@ -94,17 +102,34 @@ nav {
 .container__intro {
   padding: 25px 20px;
   border-bottom: 2px solid gray;
+  font-size: 25px;
+  font-style: italic;
 }
-.container__intro {
+.container__conclusion {
   padding: 15px 10px;
   line-height: 50px;
-  /* gap: 15px; */
+  gap: 15px;
+}
+.container__body {
+  display: flex;
+  flex-direction: row;
+  color: yellow;
+  font-size: 20px;
+}
+
+.container__social {
+  width: 2%;
+  color: white;
+  margin-right: 50px;
+  /* padding: 12px 24px 12px 24px; */
 }
 .container__conclusion {
   padding: 15px 20px;
-  line-height: 35px;
+  line-height: 45px;
 }
-
+.conyainer__conclusionP {
+  font-size: 20px;
+}
 .container__aside-img {
   /* display: block; */
   width: 300px;
@@ -129,6 +154,14 @@ nav {
 .Repositories {
   padding: 10px 10px;
 }
+.Repositories button {
+  border-radius: 0px;
+  border-style: solid;
+  border-spacing: 10px;
+  font-size: 20px;
+  border-block-color: yellow;
+  background-color: rgb(78, 77, 77);
+}
 .repo__1a {
   padding: 20px;
   margin-top: 15px;
@@ -145,7 +178,7 @@ nav {
 }
 
 .activeLink {
-  color: white;
+  color: rgb(255, 251, 3);
 }
 
 .repo-card h2:hover {
@@ -168,11 +201,5 @@ nav {
     margin-left: 30%;
     border: 1px solid gray;
     border-left: none;
-  }
-  /* .container__intro{
-border-bottom: 2px solid gray;
-  } */
-
-  .container__body {
   }
 }

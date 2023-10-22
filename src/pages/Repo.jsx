@@ -67,14 +67,6 @@ function Repo() {
           <p>Forks: 0</p>
           <p>Stars: 0</p>
           <p>Visibility: 0</p>
-
-          {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
-          nobis accusamus omnis ex exercitationem perspiciatis repellat vitae
-          animi incidunt culpa numquam, eius asperiores ipsa rerum. Ipsa veniam
-          doloremque dolorum architecto? Amet odit illum ab in, doloremque
-          ullam, tenetur illo eos quaerat dicta quis facere, natus aspernatur
-          beatae dolorem quod dolor reiciendis unde. Eaque, consectetur nisi
-          quibusdam atque quisquam deserunt. Quam! */}
         </p>
 
         <button onClick={() => navigate("/repositories")}>Go back</button>
